@@ -1,0 +1,463 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo apt purge openjdk*
+    4  add-apt-repository -y ppa:webupd8team/java
+    5  sudo add-apt-repository -y ppa:webupd8team/java
+    6  sudo apt update
+    7  apt install -y oracle-java8-installer
+    8  sudo apt install -y oracle-java8-installer
+    9  java -version
+   10  sudo nano /etc/profile
+   11  source /etc/profile
+   12  editor /etc/sysctl.conf
+   13  nano editor /etc/sysctl.conf
+   14  sudo editor /etc/sysctl.conf
+   15  reboot
+   16  nano .bashrc
+   17  source .bashrc
+   18  sudo addgroup hadoopgroup
+   19  adduser -ingroup hadoopgroup hadoopuser
+   20  sudo adduser -ingroup hadoopgroup hadoopuser
+   21  sudo apt install ssh
+   22  systemctl enable ssh
+   23  systemctl start ssh
+   24  su-hadoopuser
+   25  su -hadoopuser
+   26  su - hadoopuser
+   27  cd /home/hadoopuser
+   28  ls
+   29  mv hadoop-3.0.3 /usr/local
+   30  mv hadoop-2.8.4 /usr/local
+   31  sudo mv hadoop-2.8.4 /usr/local
+   32  sudo ln -sf /usr/local/hadoop-3.0.3/ /usr/local/hadoop
+   33  ls
+   34  cd /
+   35  ls
+   36  cd usr/local
+   37  ls
+   38  cd hadoop
+   39  cd hadoopcd /
+   40  cd /
+   41  sudo ln -sf /usr/local/hadoop-2.8.4/ /usr/local/hadoop
+   42  ls
+   43  cd usr/local
+   44  ls
+   45  cd hadoop
+   46  ls
+   47  cd /
+   48  chown -R hadoopuser:hadoopgroup /usr/local/hadoop-3.0.3/
+   49  sudo chown -R hadoopuser:hadoopgroup /usr/local/hadoop-2.8.4/
+   50  cd
+   51  nano bashrc
+   52  nano .bashrc
+   53  sudo nano .bashrc
+   54  source .bashrc
+   55  su - hadoopuser
+   56  cd /
+   57  sudo apt install python
+   58  python
+   59  cd
+   60  ls
+   61  wget https://downloads.lightbend.com/scala/2.12.6/scala-2.12.6.tgz
+   62  tar xvf scala-2.12.6.tgz
+   63  mv scala-2.12.6 /usr/local/scala
+   64  sudo mv scala-2.12.6 /usr/local/scala
+   65  sudo nano .bashrc
+   66  source .bashrc
+   67  scala -version
+   68  wget http://mirror.olnevhost.net/pub/apache/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz
+   69  bash Anaconda3-5.0.1-Linux-x86_64.sh
+   70  bash Anaconda3-5.2.0-Linux-x86_64.sh
+   71  wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+   72  bash Anaconda3-5.2.0-Linux-x86_64.sh
+   73  sudo apt-get install ntp
+   74  wget https://archive.apache.org/dist/pig/pig-0.15.0/pig-0.15.0.tar.gz
+   75  sudo tar zxvf pig-0.15.0.tar.gz
+   76  cd /usr/local/hadoop
+   77  ls
+   78  sudo mkdir Pig
+   79  ls
+   80  cd
+   81  ls
+   82  sudo mv pig-0.15.0/* /usr/local/hadoop/Pig/
+   83  cd /usr/local/hadoop/Pig/
+   84  ls
+   85  cd
+   86  sudo nano .bashrc
+   87  source .bashrc
+   88  pig
+   89  mysql
+   90  sudo apt install mysql-client-core-5.7
+   91  sudo apt install mariadb-client-core-10.1
+   92  sudo apt-get update
+   93  sudo apt-get install mysql-server
+   94  sudo mysql_secure_installation
+   95  sudo sql
+   96  sudo apt update && sudo apt upgrade
+   97  sudo apt install mysql-workbench
+   98  sudo mysql-workbench
+   99  cd /usr/local
+  100  sudo wget https://archive.apache.org/dist/hbase/hbase-0.98.8/hbase-0.98.8-hadoop2-bin.tar.gz
+  101  sudo tar -zxvf hbase-0.98.8-hadoop2-bin.tar.gz
+  102  sudo mkdir Hbase
+  103  sudo mv hbase-0.98.8-hadoop2/* Hbase/
+  104  cd Hbase
+  105  ls
+  106  cd conf
+  107  sudo nano hbase-env.sh
+  108  sudo nano hbase-site.xml
+  109  jps
+  110  cd ..
+  111  sudo chown -R hadoopuser:hadoopgroup Hbase 
+  112  cd HbAE
+  113  cd Hbase
+  114  sudo
+  115  cd
+  116  nano .bashrc
+  117  source  .bashrc
+  118  source .bashrc
+  119  nano .bashrc
+  120  source .bashrc
+  121  exit
+  122  cd
+  123  wget https://archive.apache.org/dist/sqoop/1.4.4/sqoop-1.4.4.bin__hadoop-1.0.0.tar.gz
+  124  tar xzf sqoop-1.4.4.bin__hadoop-1.0.0.tar.gz
+  125  ls
+  126  sudo mv sqoop 1.4.4.bin hadoop1.0.0 /usr/lib/sqoop
+  127  cd /
+  128  cd usr
+  129  cd lib
+  130  sudo mkdir sqoop
+  131  cd sqoop
+  132  cd /
+  133  cd
+  134  sudo mv sqoop 1.4.4.bin hadoop1.0.0 /usr/lib/sqoop
+  135  ls
+  136  sudo mv sqoop-1.4.4.bin__hadoop1.0.0 /usr/lib/sqoop
+  137  sudo mv sqoop-1.4.4.bin__hadoop-1.0.0 /usr/lib/sqoop
+  138  ls
+  139  cd /usr/lib/sqoop
+  140  ls
+  141  cd
+  142  nano .bashrc
+  143  source .bashrc
+  144  nano .bashrc
+  145  source .bashrc
+  146  sqoop
+  147  sqoop version
+  148  cd /usr/lib/sqoop
+  149  ls
+  150  sqoop-1.4.4.bin__hadoop-1.0.0
+  151  cd sqoop-1.4.4.bin__hadoop-1.0.0
+  152  ls
+  153  sqoop
+  154  ls
+  155  cd conf
+  156  ls
+  157  cd
+  158  SQOOP_HOME/conf
+  159  cd /usr/lib/sqoop
+  160  cd sqoop-1.4.4.bin__hadoop-1.0.0/conf
+  161  ls
+  162  nano sqoop-env-template.sh
+  163  ls
+  164  sqoop-version
+  165  cd
+  166  ls
+  167  cd /
+  168  cd usr/lib
+  169  sudo rm -r sqoop
+  170  ls
+  171  cd
+  172  ls
+  173  sudo rm sqoop-1.4.4.bin__hadoop-1.0.0.tar.gz
+  174  ls
+  175  cd
+  176  cd /
+  177  nano .bashrc
+  178  cd
+  179  nano .bashrc
+  180  source .bashrc
+  181  ls
+  182  sudo mv eclipse-jee-photon-R-linux-gtk-x86_64 /usr/local
+  183  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+  184  sudo bash -c 'echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" > /etc/apt/sources.list.d/mongodb-org-3.2.list'
+  185  sudo apt update
+  186  sudo apt install mongodb-org
+  187  cd
+  188  cd /
+  189  ls
+  190  sudo gedit /etc/systemd/system/mongodb.service
+  191  systemctl daemon-reload
+  192  sudo systemctl start mongodb
+  193  systemctl daemon-reload
+  194  sudo systemctl start mongodb
+  195  sudo nano /etc/systemd/system/mongodb.service
+  196  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+  197  echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+  198  sudo apt-get update
+  199  sudo apt-get install -y mongodb-org
+  200  sudo apt-get install -y mongodb-org=3.4 mongodb-org-server=3.4 mongodb-org-shell=3.4 mongodb-org-mongos=3.4 mongodb-org-tools=3.4
+  201  systemctl daemon-reload
+  202  sudo systemctl start mongodb
+  203  netstat -plntu
+  204  sudo systemctl status mongodb
+  205  sudo systemctl enable mongodb
+  206  mongodb
+  207  sudo systemctl restart mongodb
+  208  mongo
+  209  sudo apt-get install exfat-fuse exfat-utils
+  210  cd
+  211  ls
+  212  wget https://download.robomongo.org/1.2.1/linux/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz
+  213  ls
+  214  sudo tar xzf robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz
+  215  ls
+  216  cd /
+  217  cd home
+  218  ls
+  219  cd nightmare_ash
+  220  ls
+  221  mv robo3t-1.2.1-linux-x86_64-3e50a65
+  222  mv robo3t-1.2.1-linux-x86_64-3e50a65 / usr/local
+  223  mv robo3t-1.2.1-linux-x86_64-3e50a65 /usr/local
+  224  sudo mv robo3t-1.2.1-linux-x86_64-3e50a65 /usr/local
+  225  cd /
+  226  cd usr
+  227  cd local
+  228  ls
+  229  cd robo3t-1.2.1-linux-x86_64-3e50a65
+  230  ls
+  231  wget https://archive.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+  232  sudo wget https://archive.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+  233  cd /
+  234  ls
+  235  cd
+  236  ls
+  237  sudo wget https://archive.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+  238  tar -zxf zookeeper-3.4.6.tar.gz
+  239  ls
+  240  cd zookeeper-3.4.6
+  241  ls
+  242  mkdir data
+  243  nano conf/zoo.cfg
+  244  ls
+  245  cd conf
+  246  ls
+  247  nano conf/zoo.cfg
+  248  sudo nano conf/zoo.cfg
+  249  cd ..
+  250  sudo nano conf/zoo.cfg
+  251  bin/zkServer.sh start
+  252  sudo bin/zkServer.sh start
+  253  sudo bin/zkCli.sh
+  254  bin/zkCli.sh
+  255  cd /
+  256  ls
+  257  cd opt
+  258  ls
+  259  cd /
+  260  ls
+  261  cd
+  262  ls
+  263  sudo mv zookeeper-3.4.6 / opt
+  264  sudo mv zookeeper-3.4.6 /opt
+  265  ls
+  266  cd 
+  267  cd /
+  268  ls
+  269  cd opt
+  270  ls
+  271  cd
+  272  ls
+  273  wget http://archive.apache.org/dist/kafka/0.9.0.0/kafka_2.11-0.9.0.0.tgz
+  274  ls
+  275  cd
+  276  $ bin/kafka-server-stop.sh config/server.properties
+  277  ls
+  278  cd kafka_2.11-0.9.0.0
+  279  cd
+  280  ls
+  281  mv kafka_2.11-0.9.0.0 /opt
+  282  sudo mv kafka_2.11-0.9.0.0 /opt
+  283  ls
+  284  cd /
+  285  ls
+  286  cd opt
+  287  ls
+  288  jps
+  289  start-all.sh
+  290  cd
+  291  ls
+  292  cd /
+  293  ls
+  294  start-all.sh
+  295  cd /
+  296  ls
+  297  cd opt
+  298  ls
+  299  cd zookeeper-3.4.6
+  300  bin/zookeeper-server-start.sh config/zookeeper.properties
+  301  sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+  302  cd
+  303  cd /
+  304  ls
+  305  cd opt
+  306  ls
+  307  cd zookeeper-3.4.6
+  308  sudo bin/zkServer.sh start
+  309  cd..
+  310  cd ..
+  311  ls
+  312  cd kafka_2.11-0.9.0.0
+  313  ls
+  314  sudo bin/kafka-server-start.sh config/server.properties
+  315  cd
+  316  jps
+  317  sudo start-all.sh
+  318  start all.sh
+  319  start-all.sh
+  320  jps
+  321  start.dfs.sh
+  322  jps
+  323  cd / 
+  324  cd opt
+  325  ls
+  326  cd zookeeper-3.4.6
+  327  ls
+  328  sudo bin/zkServer.sh start
+  329  sudo bin/zkCli.sh
+  330  cd /
+  331  ls
+  332  cd opt
+  333  ls
+  334  cd kafk_2.11-0.9.0.0
+  335  cd kafka_2.11-0.9.0.0
+  336  ls
+  337  sudo bin/kafka-server-start.sh config/server.propertie
+  338  bin/kafka-server-start.sh config/server.propertie
+  339  sudo bin/kafka-server-start.sh config/server.propertie
+  340  bin/kafka-server-stop.sh config/server.properties
+  341  sudo bin/kafka-server-stop.sh config/server.properties
+  342  sudo bin/kafka-server-start.sh config/server.propertie
+  343  bin/kafka-server-start.sh config/server.properties
+  344  sudo bin/kafka-server-start.sh config/server.properties
+  345  jps
+  346  ls
+  347  cd
+  348  ls
+  349  jps
+  350  cd /
+  351  ls
+  352  cd opt
+  353  ls
+  354  cd kafka_2.11-0.9.0.0
+  355  ls
+  356  sudo bin/kafka-server-start.sh config/server.properties
+  357  bin/kafka-server-stop.sh config/server.properties
+  358  sudo bin/kafka-server-stop.sh config/server.properties
+  359  sudo bin/kafka-server-start.sh config/server.properties
+  360  jps
+  361  cd /
+  362  cd opt
+  363  ls
+  364  cd zookeeper-3.4.6
+  365  bin/zookeeper-server-start.sh config/zookeeper.properties
+  366  sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+  367  sudo bin/zkServer.sh start
+  368  bin/zkCli.sh
+  369  sudo apt update
+  370  sudo apt list
+  371  sudo apt upgrade
+  372  apt upgrade
+  373  sudo apt upgrade
+  374  sudo apt list
+  375  sudo apt update
+  376  sudo apt list
+  377  sudo apt upgrade
+  378  sudo apt update
+  379  sudo apt list
+  380  sudo apt upgrade
+  381  exiot
+  382  exit
+  383  su - hadoopuser
+  384  cd /
+  385  cd opt
+  386  ls
+  387  cd zookeeper-3.4.6/
+  388  ls
+  389  sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+  390  bin/zookeeper-server-start.sh config/zookeeper.properties
+  391  cd ..
+  392  ls
+  393  kafka_2.11-0.9.0.0/
+  394  cd kafka_2.11-0.9.0.0/
+  395  sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+  396  cd opt
+  397  cd /
+  398  cd opt
+  399  ls
+  400  cd kafka_2.11-0.9.0.0
+  401  bin/kafka-server-start.sh config/server.properties
+  402  sudo bin/kafka-server-start.sh config/server.properties
+  403  cd /
+  404  cd opt
+  405  su - hadoopuser
+  406  cd /
+  407  cd opt
+  408  cd zookeeper-3.4.6/
+  409  bin/zookeeper-server-start.sh
+  410  sudo bin/zkServer.sh start
+  411  cd ..
+  412  cd kafka_2.11-0.9.0.0/
+  413  ls
+  414  bin/zookeeper-server-start.sh config/zookeeper.properties
+  415  jps
+  416  bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Hello-Kafka
+  417  bin/kafka-console-consumer.sh --zookeeper localhost:2181 —topic Hello-Kafka --from-beginning --whitelist Hello-Kafka
+  418  cd /
+  419  cd opt
+  420  cd kafka_2.11-0.9.0.0/
+  421  bin/kafka-console-producer.sh --broker-list localhost:9092 --topic Hello-Kafka
+  422  cd /
+  423  cd opt
+  424  ls
+  425  cd kafka_2.11-0.9.0.0/
+  426  bin/kafka-server-start.sh config/server.properties
+  427  cd /
+  428  cd opt
+  429  cd kafka_2.11-0.9.0.0/
+  430  bin/kafka-topics.sh --list --zookeeper localhost:2181
+  431  bin/kafka-console-consumer.sh --zookeeper localhost:2181 —topic Hello-Kafka --from-beginning
+  432  jps
+  433  qoop import --connect jdbc:mysql://localhost/joshi --username root -P --table attendees --m 1 --target-dir /new1 (edited)
+  434  sqoop import --connect jdbc:mysql://localhost/ashiq --username root -P --table attendees --m 1 --target-dir /new1
+  435  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendees --m 1 --target-dir /new1
+  436  hadoop fs -cat /new1/part-m-*
+  437  cd /
+  438  ls
+  439  cd lib
+  440  ls
+  441  cd /
+  442  cd $SQOOP_HOME/bin
+  443  ls
+  444  sqoop-version
+  445  sqoop import --connect jdbc:mysql://localhost/playtime --username root -P --table Persons --m 1 --where "LastName ='Cardinal'" 
+  446  cd $SQOOP_HOME/bin
+  447  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendess --m 1 --where "sector ='fin'"
+  448  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendees --m 1 --where "sector ='fin'"
+  449  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendees --m 1 --where "sector ='fin'" -- targe-dir /wherequery
+  450  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendees --m 1 --where "sector ='fin'" -- target-dir /wherequery
+  451  hadoop fs -cat /wherequery/part-m-*
+  452  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendees --m 1 --where "sector ='fin'" --target-dir /wherequery
+  453  hadoop fs -cat /wherequery/part-m-*
+  454  sqoop import --connect jdbc:mysql://localhost/Ashiq --username root -P --table attendees --m 1 --where "sector ='fin'" --target-dir /wherequery
+  455  cd /
+  456  ssh-copy-id -i ~/.ssh/id_rsa.pub localhost
+  457  jps
+  458  .bashrc
+  459  nano .bashrc
+  460  cd
+  461  nano .bashrc
+  462  cd
+  463  history > history_for_scoop.txt
